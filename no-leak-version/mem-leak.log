@@ -1,0 +1,55 @@
+Filename: leak_example.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     8    153.1 MiB    153.1 MiB   @profile
+     9                             def load_dicom(filename):
+    10    153.1 MiB      0.0 MiB       with tf.gfile.GFile(filename, 'rb') as dicom_file_obj:
+    11    156.8 MiB      3.8 MiB           return dicom_file_obj.read()
+
+
+88466
+Filename: leak_example.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     8    156.8 MiB    156.8 MiB   @profile
+     9                             def load_dicom(filename):
+    10    156.8 MiB      0.0 MiB       with tf.gfile.GFile(filename, 'rb') as dicom_file_obj:
+    11    156.8 MiB      0.0 MiB           return dicom_file_obj.read()
+
+
+88466
+Filename: leak_example.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     8    156.8 MiB    156.8 MiB   @profile
+     9                             def load_dicom(filename):
+    10    156.8 MiB      0.0 MiB       with tf.gfile.GFile(filename, 'rb') as dicom_file_obj:
+    11    156.9 MiB      0.1 MiB           return dicom_file_obj.read()
+
+
+88466
+Filename: leak_example.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     8    156.9 MiB    156.9 MiB   @profile
+     9                             def load_dicom(filename):
+    10    156.9 MiB      0.0 MiB       with tf.gfile.GFile(filename, 'rb') as dicom_file_obj:
+    11    157.0 MiB      0.1 MiB           return dicom_file_obj.read()
+
+
+88466
+Filename: leak_example.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     8    157.0 MiB    157.0 MiB   @profile
+     9                             def load_dicom(filename):
+    10    157.0 MiB      0.0 MiB       with tf.gfile.GFile(filename, 'rb') as dicom_file_obj:
+    11    157.1 MiB      0.1 MiB           return dicom_file_obj.read()
+
+
+88466
